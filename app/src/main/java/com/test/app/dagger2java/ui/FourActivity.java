@@ -11,8 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.test.app.dagger2java.MainActivity;
 import com.test.app.dagger2java.MainApplication;
 import com.test.app.dagger2java.R;
-import com.test.app.dagger2java.module.DataModule;
-import com.test.app.dagger2java.object.HttpObject;
 import com.test.app.dagger2java.object.QuanJuDanLiObject;
 
 import javax.inject.Inject;
@@ -20,7 +18,7 @@ import javax.inject.Inject;
 /**
  * 单例 在Activity中通过Application去获取Component。
  */
-public class ThirdActivity extends AppCompatActivity {
+public class FourActivity extends AppCompatActivity {
 
     String TAG =  getClass().getName();
     //注入后直接用
@@ -33,9 +31,8 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_second);
-        setTitle("ThirdActivity");
-        ((MainApplication)getApplication()).getQuanJuDanLiComponent().injectThirdActivity(this);
-       // httpObject.post();
+        setTitle("FourActivity");
+        ((MainApplication)getApplication()).getQuanJuDanLiComponent().injectFourActivity(this);
         TextView tv_content = findViewById(R.id.tv_content);
         tv_content.setOnClickListener(new View.OnClickListener() {
             @Override

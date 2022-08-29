@@ -9,11 +9,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.test.app.dagger2java.MainActivity;
+import com.test.app.dagger2java.MainApplication;
 import com.test.app.dagger2java.R;
 import com.test.app.dagger2java.component.DaggerMyComponent;
 import com.test.app.dagger2java.module.DataModule;
 import com.test.app.dagger2java.object.DataObject;
 import com.test.app.dagger2java.object.HttpObject;
+import com.test.app.dagger2java.object.QuanJuDanLiObject;
 
 import javax.inject.Inject;
 
@@ -25,6 +27,9 @@ public class SecondActivity extends AppCompatActivity {
     HttpObject httpObject1;
     @Inject
     DataObject dataObject1;
+
+    /*@Inject
+    QuanJuDanLiObject quanJuDanLiObject2;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +49,7 @@ public class SecondActivity extends AppCompatActivity {
         Log.d(TAG,"dataObject1 hashcode:"+dataObject1.hashCode());
     }
     public void jumpActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
     }
 }

@@ -27,6 +27,14 @@
             android:name=".ui.SecondActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ui.ThirdActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ui.FourActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

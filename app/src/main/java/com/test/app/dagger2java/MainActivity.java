@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         DaggerMyComponent.create().injectMainActivity(this);
-        //httpObject1.post();
-        //httpObject2.post();
         Log.d(TAG,"httpObject1 hashcode:"+httpObject1.hashCode());
         Log.d(TAG,"httpObject2 hashcode:"+httpObject2.hashCode());//hashcode 不同说明 httpObject1 httpObject2 不是单例
         Log.d(TAG,"dataObject1 hashcode:"+dataObject1.hashCode());
