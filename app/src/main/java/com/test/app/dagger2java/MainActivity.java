@@ -12,6 +12,7 @@ import com.test.app.dagger2java.component.DaggerMyComponent;
 import com.test.app.dagger2java.object.DataObject;
 import com.test.app.dagger2java.object.HttpObject;
 import com.test.app.dagger2java.ui.FirstActivity;
+import com.test.app.dagger2java.ui.FirstScopeActivity;
 
 import javax.inject.Inject;
 
@@ -48,10 +49,22 @@ public class MainActivity extends AppCompatActivity {
                 jumpActivity();
             }
         });
+        TextView tv_scope = findViewById(R.id.tv_scope);
+        tv_scope.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jumpScopeActivity();
+            }
+        });
     }
     public void jumpActivity(){
         Log.d(TAG,"jumpActivity");
         Intent intent = new Intent(this,FirstActivity.class);
+        startActivity(intent);
+    }
+    public void jumpScopeActivity(){
+        Log.d(TAG,"jumpScopeActivity");
+        Intent intent = new Intent(this, FirstScopeActivity.class);
         startActivity(intent);
     }
 }

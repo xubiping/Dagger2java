@@ -35,6 +35,17 @@
             android:name=".ui.FourActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ui.FiveActivity"
+            android:exported="true">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.FirstScopeActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

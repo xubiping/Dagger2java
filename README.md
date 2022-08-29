@@ -9,3 +9,15 @@
 ### 通过测试在Module 里面注入@Singleton  对象是局部单例
 
 ### 获取的依赖注入对象全局单例
+
+### scope  范围作用域，可以实现局部单例
+#### 先自定义一个作用域
+    
+```aidl
+@Scope
+@Retention(RUNTIME)
+public @interface ActivityScope {
+
+}
+```
+#### 然后在 Module 方法上和 Component类上加上自定义 @ActivityScope，就可以实现局部单例

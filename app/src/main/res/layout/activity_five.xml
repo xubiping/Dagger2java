@@ -4,25 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.SecondActivity">
 
     <TextView
         android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="普通对象和静态对象"
+        android:text="activity_five"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/tv_scope"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scope 实例"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_content"
-        android:layout_marginTop="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

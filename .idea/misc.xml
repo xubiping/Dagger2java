@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_first.xml" value="0.18489583333333334" />
+        <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_five.xml" value="0.19114583333333332" />
         <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_four.xml" value="0.16510416666666666" />
         <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_main.xml" value="0.18489583333333334" />
+        <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_scope_first.xml" value="0.19114583333333332" />
+        <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_scope_second.xml" value="0.19114583333333332" />
         <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_second.xml" value="0.18489583333333334" />
         <entry key="..\:/myasgit/Dagger2java/app/src/main/res/layout/activity_third.xml" value="0.18333333333333332" />
       </map>
