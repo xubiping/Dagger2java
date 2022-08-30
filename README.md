@@ -21,3 +21,11 @@ public @interface ActivityScope {
 }
 ```
 #### 然后在 Module 方法上和 Component类上加上自定义 @ActivityScope，就可以实现局部单例
+
+### @Subcomponent 子模块
+####    子模块的处理和 正式模块处理一样，然后吧子模块的 TestSubComponent 放到关联Component 接口类里面调用
+
+### @Named 对象做区分，里面的参数值可能不一样
+
+
+
